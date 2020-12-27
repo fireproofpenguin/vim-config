@@ -3,6 +3,8 @@ This is my vim config for development, still missing some key plugins that I wou
 
 Theme is inspired by the 2077 theme for vscode.
 
+Personally use this with iTerm2 and Fira Code font face / ligatures enabled.
+
 ## Missing
 - COC (autocompletion)
 - Some colors missing for js / ts keywords
@@ -22,8 +24,9 @@ Open up vim and run `:PlugInstall`
 ## Commands
 The leader key has been mapped to ,
 
-Command | Action
-,m | Opens NERDTree
-,p | Formats code with prettier
-,. | Opens recent files buffer
-,f | Fuzzy file search
+| Command | Action |
+| ------- | ------ |
+| ,m      | Opens NERDTree |
+| ,p      | Formats code with prettier |
+| ,.      | Opens recent files buffer |
+| ,f      | Fuzzy file search |
