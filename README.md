@@ -35,3 +35,17 @@ The leader key has been mapped to ,
 | ,p      | Formats code with prettier |
 | ,.      | Opens recent files buffer |
 | ,f      | Fuzzy file search |
+
+
+## Troubleshooting
+Sometimes the coc installer will complain about invalid syntax when attempting to install the language servers.
+
+To fix this we can run:
+```
+:echo coc#util#extension_root()."/package.json"
+```
+
+This should output a file name (in my environment this is `/Users/sgerrard/.config/coc/extensions/package.json`)
+We can check this file for syntax errors, in my case this was a doubled up closing bracket.
+
+This fix was sourced from: https://www.reddit.com/r/neovim/comments/jwhv85/certain_coc_extensions_not_installing/
